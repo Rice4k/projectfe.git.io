@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="icon" href="./assets/image/logoicon.png" type="image/x-icon" />
+    <title>Shop - Gói Tập Luyện</title>
+    <link rel="stylesheet" href="/assets/css/shop.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/test.css">
+</head>
+<body>
+  <nav>
+    <div class="nav__bar">
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#"><img src="./assets/image/logo.png" alt="logo" /></a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#trainer">TRAINER</a></li>
+        <li><a href="#client">CLIENT</a></li>
+        <li><a href="#blog">BLOG</a></li>
+        <li><a href="shop.html">SHOP</a></li>
+        <li><a href="cart.html" target="page"><i class="fa-solid fa-cart-shopping"></i>(<span id="cart-count">0</span>)</a></li>
+        <li class="separator"></li>
+        <li><a href="login.html">LOGIN</a></li>
+      </ul>
+    </div>
+  </nav>
+
+      <!-- <header class="bordered"> -->
+        <!-- <h1 style="text-align: center;">Danh sách sản phẩm</h1> -->
+        <!-- <a href="cart.html" class="cart-link"> Giỏ hàng (<span id="cart-count">0</span>)</a>
+      </header> -->
+      
+      <section class="products bordered">
+        <h1>Danh sách sản phẩm</h1>
+
+        <div class="product">
+          <img src="/assets/image/blog1.png" alt="Sản phẩm 1">
+          <h2>GÓI CƠ BẢN</h2>
+          <p>200.000đ/tháng</p>
+          <button onclick="addToCart('Gói CƠ BẢN', 200000)">Thêm vào giỏ</button>
+        </div>
+        <div class="product">
+          <img src="/assets/image/blog1.png" alt="Sản phẩm 1">
+          <h2>GÓI CHUYÊN NGHIỆP</h2>
+          <p>300.000đ/tháng</p>
+          <button onclick="addToCart('GÓI CHUYÊN NGHIỆP', 300000)">Thêm vào giỏ</button>
+        </div>
+        <div class="product">
+          <img src="/assets/image/blog1.png" alt="Sản phẩm 1">
+          <h2>GÓI CAO CẤP</h2>
+          <p>500.000đ/tháng</p>
+          <button onclick="addToCart('GÓI CAO CẤP', 500000)">Thêm vào giỏ</button>
+        </div>
+        <div class="product">
+          <img src="/assets/image/blog1.png" alt="Sản phẩm 1">
+          <h2>GÓI VIP</h2>
+          <p>700.000đ/tháng</p>
+          <button onclick="addToCart('GÓI VIP', 700000)">Thêm vào giỏ</button>
+        </div>
+        <div class="product">
+          <img src="/assets/image/blog1.png" alt="Sản phẩm 1">
+          <h2>GÓI VIP2</h2>
+          <p>1.000.000đ/tháng</p>
+          <button onclick="addToCart('GÓI VIP2', 1000000)">Thêm vào giỏ</button>
+        </div>
+        <div class="product">
+          <img src="/assets/image/blog1.png" alt="Sản phẩm 1">
+          <h2>GÓI PREMIUM</h2>
+          <p>5.000.000đ/tháng</p>
+          <button onclick="addToCart('GÓI PREMIUM', 5000000)">Thêm vào giỏ</button>
+        </div>
+      </section>
+
+
+
+      <section class="products bordered">
+        <h1>Danh sách sản phẩm thực phẩm bổ sung</h1>
+        <div class="product">
+          <img src="/assets/image/whey.jpg" alt="Sản phẩm 1">
+          <h2>WHEY</h2>
+          <p>20</p>
+          <button onclick="addToCart('WHEY', 20)">Thêm vào giỏ</button>
+        </div>
+        <div class="product">
+          <img src="/assets/image/whey.jpg" alt="Sản phẩm 1">
+          <h2>WHEY</h2>
+          <p>30</p>
+          <button onclick="addToCart('WHEY', 30)">Thêm vào giỏ</button>
+        </div>
+        <div class="product">
+          <img src="/assets/image/whey.jpg" alt="Sản phẩm 1">
+          <h2>WHEY</h2>
+          <p>50</p>
+          <button onclick="addToCart('WHEY', 50)">Thêm vào giỏ</button>
+        </div>
+      </section>
+
+    <script src="/js/sh.js"></script>
+
+    <footer class="footer" id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="#"><img src="assets/image/logo.png" alt="logo" /></a>
+          </div>
+          <p>
+            Welcome to RICEGYM, where we believe that every journey to
+            fitness is unique and empowering.
+          </p>
+          <ul class="footer__links">
+            <li>
+              <a href="#">
+                <span><i class="ri-map-pin-2-fill"></i></span>
+                116 Dong Den Street, Tan Binh District.
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-phone-fill"></i></span>
+                0833123456
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-mail-fill"></i></span>
+                rice@123.comm
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>GALLERY</h4>
+          <div class="gallery__grid">
+            <img src="assets/image/cardio.png" alt="gallery"/>
+            <img src="assets/image/cardio.png" alt="gallery"/>
+            <img src="assets/image/cardio.png" alt="gallery"/>
+            <img src="assets/image/cardio.png" alt="gallery"/>
+            <img src="assets/image/cardio.png" alt="gallery"/>
+            <img src="assets/image/cardio.png" alt="gallery"/>
+          
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>NEWSLETTER</h4>
+          <p>
+            Don't miss out on the latest news and offers - sign up today and
+            join our thriving fitness community!
+          </p>
+          <form action="/">
+            <input type="text" placeholder="Enter Email" />
+            <button class="btn btn__primary">SEND</button>
+          </form>
+          <div class="footer__socials">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bar">RICE</div>
+    </footer>
+</body>
+</html>
